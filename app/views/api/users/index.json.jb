@@ -1,0 +1,7 @@
+@userss.map do |users|
+  {
+    id: users.id,
+    first_name: users.first_name,
+    last_name: users.last_name,
+  }
+end

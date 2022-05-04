@@ -1,0 +1,8 @@
+@bathrooms.map do |bathroom|
+  {
+    id: bathroom.id,
+    park: bathroom.park,
+    latitude: bathroom.latitude,
+    longitude: bathroom.longitude
+  }
+end

@@ -1,0 +1,9 @@
+{ id: @review.id,
+  name: @review.name,
+  comment: @review.comment,
+  cleanliness: @review.cleanliness,
+  return: @review.return,
+  recommend: @review.recommend,
+  bathroom_id: @review.bathroom_id,
+  rating: @review.rating
+}

@@ -1,0 +1,12 @@
+@reviews.map do |reviews|
+  {
+    id: reviews.id,
+    name: reviews.name,
+    comment: reviews.comment,
+    cleanliness: reviews.cleanliness,
+    return: reviews.return,
+    recommend: reviews.recommend,
+    bathroom_id: reviews.bathroom_id,
+    rating: reviews.rating
+  }
+end
