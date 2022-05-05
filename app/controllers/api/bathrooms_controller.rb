@@ -9,7 +9,7 @@ class Api::BathroomsController < ApplicationController
     the_id = params[:id]
     @bathroom = Bathroom.find_by(id: the_id)
     puts @bathroom
-    render json: @bathroom 
+    render json: @bathroom
   end
 
   def create
@@ -36,10 +36,12 @@ class Api::BathroomsController < ApplicationController
   def destroy
     @bathroom = Bathroom.find_by(id: params[:id])
 
-    @bathroom.destroy
-    @bathroom.save
-
-    render 'destroy.json.jb'
+    if @bathroom.present?
+      @bathroom.destroy
+      @bathroom.save
+    end
+    
+    render
   end
 
 end
