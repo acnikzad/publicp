@@ -2,13 +2,13 @@ class Api::ReviewsController < ApplicationController
 
   def index 
     @reviews = Review.all
-    render 'index.json.jb'
+    render
   end
 
   def show
     the_id = params[:id]
     @review = Review.find_by(id: the_id)
-    render 'show.json.jb'
+    render json: @review
   end
 
   def create
@@ -22,7 +22,7 @@ class Api::ReviewsController < ApplicationController
       rating: params[:rating]
       )
     @review.save
-    render 'show.json.jb'
+    render :show
   end
 
   def update
@@ -37,14 +37,16 @@ class Api::ReviewsController < ApplicationController
     @review.rating = params[:rating] || @review.rating
 
     @review.save
-    render 'show.json.jb'
+    render :show
   end
 
   def destroy
-    @review = review.find_by(id: params[:id])
-    @review.destroy
-    @review.save
+    @review = Review.find_by(id: params[:id])
+    if @review.present?
+      @review.destroy
+      @review.save
+    end
 
-    render 'destroy.json.jb'
+    render
   end
 end

@@ -8,7 +8,6 @@ class Api::BathroomsController < ApplicationController
   def show
     the_id = params[:id]
     @bathroom = Bathroom.find_by(id: the_id)
-    puts @bathroom
     render json: @bathroom
   end
 
@@ -40,8 +39,7 @@ class Api::BathroomsController < ApplicationController
       @bathroom.destroy
       @bathroom.save
     end
-    
+
     render
   end
-
 end
