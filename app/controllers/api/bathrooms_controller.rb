@@ -2,13 +2,14 @@ class Api::BathroomsController < ApplicationController
 
   def index 
     @bathrooms = Bathroom.all
-    render 'index.json.jb'
+    render
   end
 
   def show
     the_id = params[:id]
     @bathroom = Bathroom.find_by(id: the_id)
-    render 'show.json.jb'
+    puts @bathroom
+    render json: @bathroom 
   end
 
   def create
@@ -18,7 +19,7 @@ class Api::BathroomsController < ApplicationController
       longitude: params[:longitude]
       )
     @bathroom.save
-    render 'show.json.jb'
+    render :show
   end
 
   def update
@@ -29,7 +30,7 @@ class Api::BathroomsController < ApplicationController
     @bathroom.longitude = params[:longitude] || @bathroom.longitude
 
     @bathroom.save
-    render 'show.json.jb'
+    render :show
   end
 
   def destroy
@@ -40,5 +41,5 @@ class Api::BathroomsController < ApplicationController
 
     render 'destroy.json.jb'
   end
-  
+
 end

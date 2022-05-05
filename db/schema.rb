@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_04_212933) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_05_162128) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "bathrooms", force: :cascade do |t|
     t.string "park"
-    t.integer "latitude"
-    t.integer "longitude"
+    t.decimal "latitude", precision: 14, scale: 12
+    t.decimal "longitude", precision: 15, scale: 12
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
