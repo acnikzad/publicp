@@ -1,7 +1,7 @@
 @reviews.map do |reviews|
   {
     id: reviews.id,
-    name: reviews.name,
+    user_id: reviews.user_id,
     comment: reviews.comment,
     cleanliness: reviews.cleanliness,
     return: reviews.return,

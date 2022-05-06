@@ -3,5 +3,7 @@
     id: users.id,
     first_name: users.first_name,
     last_name: users.last_name,
+    email: users.email,
+    password: users.password
   }
 end

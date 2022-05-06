@@ -13,7 +13,7 @@ class Api::ReviewsController < ApplicationController
 
   def create
     @review = Review.create(
-      name: params[:name],
+      user_id: params[:user_id],
       comment: params[:comment],
       cleanliness: params[:cleanliness],
       return: params[:return],
@@ -28,7 +28,7 @@ class Api::ReviewsController < ApplicationController
   def update
     the_id = params[:id]
     @review = review.find_by(id: the_id)
-    @review.name = params[:name] || @review.name
+    @review.user_id = params[:user_id] || @review.user_id
     @review.comment = params[:comment] || @review.comment
     @review.cleanliness = params[:cleanliness] || @review.cleanliness
     @review.return = params[:return] || @review.return
