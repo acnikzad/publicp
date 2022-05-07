@@ -1,0 +1,11 @@
+{ id: review.id,
+  comment: review.comment,
+  cleanliness: review.cleanliness,
+  return: review.return,
+  recommend: review.recommend,
+  bathroom_id: review.bathroom_id,
+  rating: review.rating
+
+  bathroom_id: review.bathroom.name,
+  user_id: "#{review.user.first_name} #{review.user.last_name}""
+}
