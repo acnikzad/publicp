@@ -1,7 +1,7 @@
 class Api::ReviewsController < ApplicationController
 
   def index 
-    @reviews = Review.all
+    @reviews = Review.includes(:user, :bathroom).all
     render
   end
 

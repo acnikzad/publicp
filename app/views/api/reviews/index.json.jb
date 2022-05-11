@@ -1,12 +1,12 @@
-@reviews.map do |reviews|
+@reviews.map do |review|
   {
-    id: reviews.id,
-    user_id: reviews.user_id,
-    comment: reviews.comment,
-    cleanliness: reviews.cleanliness,
-    return: reviews.return,
-    recommend: reviews.recommend,
-    bathroom_id: reviews.bathroom_id,
-    rating: reviews.rating
+    id: review.id,
+    user: review.user,
+    comment: review.comment,
+    cleanliness: review.cleanliness,
+    return: review.return,
+    recommend: review.recommend,
+    bathroom: review.bathroom,
+    rating: review.rating
   }
 end

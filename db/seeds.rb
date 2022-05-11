@@ -291,7 +291,7 @@ users = User.all
   end
 puts User.all 
 
-5.times do
+15.times do
   random_comment = comments[rand(1..40)]
   random_user_id = rand(2..19)
 

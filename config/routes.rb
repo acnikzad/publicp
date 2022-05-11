@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # end
 
 
-  namespace :api do
+  namespace :api, defaults: { format: :json } do
     get "/bathrooms" => "bathrooms#index"
     get "/bathrooms/:id" => "bathrooms#show"
     post "/bathrooms" => "bathrooms#create"
