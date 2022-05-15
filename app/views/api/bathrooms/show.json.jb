@@ -1,6 +1,6 @@
 { id: @bathroom.id,
-  park: @bathroom.park,
-  latitude: @bathroom.latitude,
-  longitude: @bathroom.longitude 
+  label: @bathroom.label,
+  lat: @bathroom.lat,
+  lng: @bathroom.lng 
 }
 

@@ -13,9 +13,9 @@ class Api::BathroomsController < ApplicationController
 
   def create
     @bathroom = Bathroom.create(
-      park: params[:park],
-      latitude: params[:latitude],
-      longitude: params[:longitude]
+      label: params[:label],
+      lat: params[:lat],
+      lng: params[:lng]
       )
     @bathroom.save
     render :show
@@ -24,9 +24,9 @@ class Api::BathroomsController < ApplicationController
   def update
     the_id = params[:id]
     @bathroom = Bathroom.find_by(id: the_id)
-    @bathroom.park = params[:park] || @bathroom.park
-    @bathroom.latitude = params[:latitude] || @bathroom.latitude
-    @bathroom.longitude = params[:longitude] || @bathroom.longitude
+    @bathroom.label = params[:label] || @bathroom.label
+    @bathroom.lat = params[:lat] || @bathroom.lat
+    @bathroom.lng = params[:lng] || @bathroom.lng
 
     @bathroom.save
     render :show
