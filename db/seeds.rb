@@ -274,15 +274,22 @@ comments = [
   "The toilet handle was broken. Thanks Biden.",
   "I live right across the street. This bathroom has an outlet behind the door and I like to plug my Tesla in overnight.",
   "I saw some kids smoking the devils lettuce in here once. I called the local authorities and watched em run away faster than a teenage girl with juicy gossip!",
-  "Kids already graffitied the new stalls put in last summer"
+  "Kids already graffitied the new stalls put in last summer",
+  "This porcelain throne has served me on more than one occasion. I would use again.",
+  "Too many loud noises in this neighborhood. Cant sit peacefully.",
+  "In high school, I used to come here and smoked a doobie",
+  "If there was a poop God, this would be his palace!",
+  "Stall number 4 has a leak.",
+  "Someone looked under the stall while I was peeing. I just redirected my pee onto the sucker.",
+  "This bathroom wasn't bad, but I would rather drive accross town and use Tahoe Parks. They have a nice one there!"
 
 ]
 
 users = User.all
 
 5.times do
-  random_f_name = f_names[rand(0..199)]
-  random_l_name = l_names[rand(0..199)]
+  random_f_name = f_names[rand(0..f_names.length - 1)]
+  random_l_name = l_names[rand(0..l_names.length - 1)]
   @user = User.create({
     "first_name" => random_f_name,
     "last_name" => random_l_name,
@@ -291,8 +298,8 @@ users = User.all
   end
 puts User.all 
 
-15.times do
-  random_comment = comments[rand(1..40)]
+200.times do
+  random_comment = comments[rand(1..comments.length - 1)]
   random_user_id = rand(2..19)
 
   @review = Review.create({
