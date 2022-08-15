@@ -15,9 +15,7 @@ class Api::ReviewsController < ApplicationController
     @review = Review.create(
       user_id: params[:user_id],
       comment: params[:comment],
-      cleanliness: params[:cleanliness],
       return: params[:return],
-      recommend: params[:recommend],
       bathroom_id: params[:bathroom_id],
       rating: params[:rating]
       )
@@ -30,9 +28,7 @@ class Api::ReviewsController < ApplicationController
     @review = review.find_by(id: the_id)
     @review.user_id = params[:user_id] || @review.user_id
     @review.comment = params[:comment] || @review.comment
-    @review.cleanliness = params[:cleanliness] || @review.cleanliness
     @review.return = params[:return] || @review.return
-    @review.recommend = params[:recommend] || @review.recommend
     @review.bathroom_id = params[:bathroom_id] || @review.bathroom_id
     @review.rating = params[:rating] || @review.rating
 

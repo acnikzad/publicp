@@ -249,7 +249,6 @@ comments = [
   "There was a phone number on the wall of this stall. I called it after a night of drinking and thats how I met my wife.",
   "This bathroom was aiiiight",
   "You'd like this bathroom if you like visiting prison bathrooms",
-  "I thought Freddy Kruger was going to come in!",
   "This could make a good fallout shelter if the apocalypse ever comes",
   "This bathroom ran out of hot water.",
   "This bathroom ran out of cold water.",
@@ -277,11 +276,18 @@ comments = [
   "Kids already graffitied the new stalls put in last summer",
   "This porcelain throne has served me on more than one occasion. I would use again.",
   "Too many loud noises in this neighborhood. Cant sit peacefully.",
-  "In high school, I used to come here and smoked a doobie",
+  "In high school, I used to come here and smoke a doobie",
   "If there was a poop God, this would be his palace!",
   "Stall number 4 has a leak.",
   "Someone looked under the stall while I was peeing. I just redirected my pee onto the sucker.",
-  "This bathroom wasn't bad, but I would rather drive accross town and use Tahoe Parks. They have a nice one there!"
+  "This bathroom wasn't bad, but I would rather drive accross town and use Tahoe Parks. They have a nice one there!",
+  "I had to call local utilities because the pipe burst under one the sinks. These are not well maintained bathrooms.",
+  "This place was so peaceful. I brought my laptop so I can work while I did my business and I totally lost track of how much time had passed!",
+  "This place offers free WiFi! The password is PublicPotty5440",
+  "The cup holders in the stall were a nice upgrade. I had somewhere to put my Starbucks while I wiped.",
+  "This bathroom is nicely kept.",
+  "The city swapped the paper towels for an air blower. I dont like it one bit.",
+  "2 out of the 3 toilets were clogged and the third was messy. I had to do my business in the urinal. Sorry maintenance guy."
 
 ]
 

@@ -1,9 +1,7 @@
 { id: @review.id,
   user_id: @review.user_id,
   comment: @review.comment,
-  cleanliness: @review.cleanliness,
   return: @review.return,
-  recommend: @review.recommend,
   bathroom_id: @review.bathroom_id,
   rating: @review.rating
 }

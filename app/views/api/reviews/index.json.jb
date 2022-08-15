@@ -3,9 +3,7 @@
     id: review.id,
     user: review.user,
     comment: review.comment,
-    cleanliness: review.cleanliness,
     return: review.return,
-    recommend: review.recommend,
     bathroom: review.bathroom,
     rating: review.rating
   }
