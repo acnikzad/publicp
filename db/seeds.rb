@@ -311,9 +311,7 @@ puts User.all
   @review = Review.create({
     "user_id" => random_user_id,
     "comment" => random_comment,
-    "cleanliness" => rand(1..5),
     "return" => ["yes", "no"].sample,
-    "recommend" => ["yes", "no"].sample,
     "rating" => rand(1..10),
     "bathroom_id" => rand(74..149)
     
